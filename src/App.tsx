@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { DiaryProvider } from './context/DiaryContext';
 import Layout from './components/layout/Layout';
 import DiaryPage from './pages/DiaryPage';
@@ -12,7 +12,7 @@ import DiscoverPage from './pages/DiscoverPage';
 export default function App() {
   return (
     <DiaryProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route element={<Layout />}>
             <Route path="/" element={<DiaryPage />} />
@@ -24,7 +24,7 @@ export default function App() {
             <Route path="/learn" element={<LearnPage />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </DiaryProvider>
   );
 }
