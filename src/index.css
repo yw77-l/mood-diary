@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-pink-bg: #FFF5F5;
+  --color-pink-btn: #FFB6C1;
+  --color-pink-dark: #FF85A2;
+  --color-text-main: #4A4A4A;
+  --color-text-sub: #8E8E8E;
+  --color-pink-border: #F0D9DA;
+  --font-family-quicksand: 'Quicksand', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', system-ui, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #FFF5F5;
+  font-family: 'Quicksand', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', system-ui, sans-serif;
+  color: #4A4A4A;
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+}
+
+#root {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: #FFF5F5;
+}
+
+/* input number hide spinner */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* smooth scroll */
+.category-scroll {
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.category-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* global scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #FFB6C1; border-radius: 999px; }
