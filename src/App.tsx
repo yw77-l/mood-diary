@@ -5,6 +5,7 @@ import DiaryPage from './pages/DiaryPage';
 import FoodPage from './pages/FoodPage';
 import WeightPage from './pages/WeightPage';
 import LearnPage from './pages/LearnPage';
+import HotPage from './pages/HotPage';
 import AlmanacPage from './pages/AlmanacPage';
 import DiscoverPage from './pages/DiscoverPage';
 
@@ -19,6 +20,7 @@ export default function App() {
             <Route path="/almanac" element={<AlmanacPage />} />
             <Route path="/food" element={<FoodPage />} />
             <Route path="/discover" element={<DiscoverPage />} />
+            <Route path="/hot" element={<HotPage />} />
             <Route path="/learn" element={<LearnPage />} />
           </Route>
         </Routes>
